@@ -2,8 +2,8 @@
 %global pypi_name pafy
 
 Name:           python-%{pypi_name}
-Version:        0.5.4
-Release:        2%{?dist}
+Version:        0.5.5
+Release:        1%{?dist}
 Summary:        Retrieve YouTube content and metadata
 
 License:        LGPLv3
@@ -101,6 +101,9 @@ ln -sf %{_bindir}/ytdl-2 %{buildroot}/%{_bindir}/ytdl-%{python2_version}
 %endif
 
 %changelog
+* Mon Jun 22 2020 Jerzy Drozdz <rpmbuilder@jdsieci.pl> - 0.5.5-1
+- Update to version 0.5.5
+
 * Thu Jul 18 2019 Jerzy Drozdz <rpmbuilder@jdsieci.pl> - 0.5.4-2
 - Disabled building of python2 package for Fedora 30+
 
